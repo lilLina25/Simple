@@ -1,0 +1,66 @@
+//<Подключение шрифтов>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+//<Шрифт по умолчанию>
+$fontfamily:"Roboto", sans-serif;
+
+//<Переменные>
+$minwidth: 320px;
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	min-width: $minwidth;
+	position: relative;
+	width:100%;
+	background-color: #FFF;
+	color:#85859B;
+}
+body{
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	font-family: $fontfamily;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:$fontfamily;}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+//<Стилизация скроллбара>
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #C8C8C8;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4C5866;
+}
